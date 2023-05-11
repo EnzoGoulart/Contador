@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+body{
+    background-color: white;
+}
+main{
+    background-color: black;
+    width: 65%;
+    min-height: 200px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+}
+#div1{
+    color: #fff;
+    text-align: center;
+}
+#div2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+button{
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid rgba(0, 0, 156, 0.884);
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    cursor: pointer;
+}
+#pid1{
+    padding: 20px 0px 0px 0px;
+    font-size: 50px;
+}
+button:hover{
+    animation: botao 0.5s  1 alternate-reverse;
+}
+@keyframes botao {
+    0%{
+        background-color: rgb(29, 29, 29);
+    }
+    50%{
+        background-color: rgb(46, 46, 46);
+    }
+    100%{
+        background-color: rgb(29, 29, 29);
+    }
+}
+@media screen and (max-width: 450px) {
+    #div2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    button{
+        padding: 20px;
+        margin: 10px;
+    }
+}
